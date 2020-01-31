@@ -1,0 +1,266 @@
+
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.left   { text-align: left;   }
+.right  { text-align: right;  }
+.center { text-align: center; }
+
+.padded     { padding: 5%;  }
+.no-padding { padding: 0;   }
+
+.bg-light { background-color: rgb(230,230,235); }
+
+.bg-dark {
+  background-color: #b2c7d8;
+  color: white;
+}
+
+.bg-yellow {
+  background-color: #fcde9c;
+  color: white;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(200,200,205);
+}
+
+.boxes{
+  padding: 2%;
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border: 1px solid;
+  color: rgb(60,60,60);
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: rgb(60,60,60);
+  color: white;
+  border-color: rgb(60,60,60);
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+i.fab {
+  font-size: 1.5rem;
+}
+
+/* Universal Styles */
+
+body {
+  font-family: 'Martel Sans', sans-serif;
+  color: rgb(60,60,65);
+}
+
+h2, h3, h4 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* header & footer */
+header {
+  padding: 3% 5%;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header a:hover {
+  color: #b3b2af;
+}
+header h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer a:hover {
+  color: #d6d6d5;
+}
+
+footer .fab {
+  font-size: 2rem;
+}
+
+img{
+  object-fit: cover;
+}
+
+/* ------------ Banner ---------- */
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/bg.jpg');
+  background-color: #8E8487;
+  background-attachment:fixed;
+  min-height: 80vh;
+  color: white;
+}
+
+/* sleep like a baby */
+.banner h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.banner h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+/* Bg images */
+.bg-puppy {
+    background-position: 50% 38%;
+}
+
+/* This prevents the sections from having a blue outline when we click to threm from the menu */
+
+section:focus,
+footer:focus  {
+  outline: none;
+}
+
+/* Media Queries */
+
+@media(max-width:768px) {
+
+  /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
+  #body .mobile-hide {
+    display: none;
+  }
+
+  /* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
+  .reverse-on-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .bg-image {
+    padding-bottom: 50%;
+  }
+
+  .banner {
+    min-height: 60vh;
+  }
+  .banner h3 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+position: relative;
+background: #fff;
+}
+
+/* Slides */
+.mySlides {
+display: none;
+padding: 20px;
+text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 25%;
+width: auto;
+margin-top: -15px;
+padding: 5px;
+color: #888;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+position: absolute;
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+text-align: center;
+padding: 1px;
+background: #fff;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+background-color: #717171;
+}
