@@ -1,127 +1,187 @@
 <!DOCTYPE html>
 
 <html>
-  <!--  This is the head section where we add external resources and links  -->
-  <head>
+<!--  This is the head section where we add external resources and links  -->
 
-    <title> Metattune </title>
+<head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Metattune </title>
 
-    <!-- this is gridlex for our grid layouts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet">
+  <!-- this is gridlex for our grid layouts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-    <!-- this is the icon font, fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet">
 
-    <!-- This is our custom stylesheet, it always goes last -->
-    <link href="style.css" rel="stylesheet">
+  <!-- this is the icon font, fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-  </head>
+  <!-- This is our custom stylesheet, it always goes last -->
+  <link href="style.css" rel="stylesheet">
 
-  <!-- This is the main content of the page -->
-  <body id="body">
+</head>
 
-      <!-- this is our main header -->
-      <header class="grid-center">
-        <div class="col-12">
-          <h1 class="center"> Metattune </h1>
+<!-- This is the main content of the page -->
+
+<body id="body">
+
+  <!-- this is our main header -->
+  <header class="grid-center-middle">
+    <nav class="col-4 right mobile-hide">
+      <a href="#about"> about </a>
+      <a href="#services"> Services </a>
+    </nav>
+    <div class="col-3 mobile-hide">
+      <h1 class="center"> Metattune </h1>
+    </div>
+    <nav class="col-4 left mobile-hide">
+      <a href="#references"> References </a>
+      <a href="#contact"> Contact </a>
+    </nav>
+<!-- mobile nav -->
+    <nav class="col-12 mobileShow computer-hide">
+      <h1 class="center"> Metattune </h1>
+    </nav>
+    <nav class="col-12 center mobileShow computer-hide">
+      <a href="#about"> about </a>
+      <a href="#services"> Services </a>
+      <a href="#references"> References </a>
+      <a href="#contact"> Contact </a>
+    </nav>
+
+    <nav class="col-12 center">
+      <a href="https://www.linkedin.com/in/mpzielstra/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/metattune/">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </nav>
+  </header>
+
+  <section class="grid-center half-color-vertical" id="about">
+    <div class="col-2_sm-5">
+      <img src="images/yana2.jpg" alt="Image" class="image">
+    </div>
+    <div class="col-2_sm-5">
+      <br> <br>
+      <img src="images/DSC09877.jpg" alt="Image" class="image">
+    </div>
+    <div class="col-6_sm-10 center padded2">
+      <h1> About Metattune </h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+        <div class="vertical-line" style="height: 55px;"></div><br>
+        <a href="#about" class="button" target="_blank">About me</a>
+    </div>
+  </section>
+
+  <section class="padded center grid">
+    <div class="col-12-middle">
+      <h2>Metattune for (inter)personal development</h2>
+      <h3>Based in scientific methodology, it takes the ‘woo’ out of intuition. <br>
+        Syncronise within and between!</h3>
+    </div>
+  </section>
+
+  <!-- services -->
+
+  <section class="grid-spaceAround padded" id="services">
+    <div class="col-3_sm-12 boxes bg-yellow">
+      <h1>one</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="col-3_sm-12 boxes">
+      <h1>two</h1>
+      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-3_sm-12 boxes bg-yellow">
+      <h1>three</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="col-12 center">
+      </br>
+      </br>
+      <a href="#contact" class="button" target="_blank">Send me a message</a>
+    </div>
+
+  </section>
+
+  <!--- Reccomendations ----------->
+  <section class="grid-center padded bg-light" id="references">
+    <div class="col-8">
+      <h2 class="center">References</h2>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+            - xxx- </blockquote>
         </div>
-        <nav class="col-12 center">
-          <a href="#about"> about </a>
-          <a href="#services"> Services </a>
-          <a href="#references"> References </a>
-          <a href="#contact"> Contact </a>
-        </nav>
-        <nav class="col-12 center">
-          <a href="https://www.linkedin.com/in/mpzielstra/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/metattune/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </nav>
-      </header>
 
-      <section class="banner padded center grid">
-        <div class="col-12-middle">
-          <h3>Metattune for (inter)personal development</h3>
-          <h2>Based in scientific methodology, it takes the ‘woo’ out of intuition. <br>
-            Syncronise within and between!</h2>
-        </div>
-      </section>
-
-      <section class="grid-center" id="about">
-        <div class="col-4_sm-12 padded">
-          <img src="images/yana.jpg" alt="Image" class="image">
-        </div>
-        <div class="col-8_sm-12 padded">
-          <h1> About Metattune </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </section>
-
-      <section class="grid-spaceAround padded" id="services">
-        <div class="col-3_sm-12 boxes bg-yellow">
-          <h1>one</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="col-3_sm-12 boxes">
-          <h1>two</h1>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="col-3_sm-12 boxes bg-yellow">
-          <h1>three</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </section>
-
-    <!--- Reccomendations ----------->
-      <section class="grid-center padded" id="references">
-        <div class="col-8">
-        <h2 class="center">References</h2>
-        <div class="slideshow-container">
-          <div class="mySlides">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-          </div>
-
-          <div class="mySlides">
-            <blockquote>xxx</blockquote>
-          </div>
-
-          <div class="mySlides">
-            <blockquote>xxx</blockquote>
-          </div>
+        <div class="mySlides">
+          <blockquote>xxx</blockquote>
         </div>
 
-        <div class="dot-container">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="mySlides">
+          <blockquote>xxx</blockquote>
         </div>
       </div>
-      </section>
 
-      <footer class="padded center bg-dark grid-center" id="contact">
-        <div class="col-8_sm-12">
-          <h2> let's connect </h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-          <a href="mailto:info@metattunes.com"> info@metattunes.com </a>
-          <nav class="social-links">
-            <a href="https://www.linkedin.com/in/mpzielstra/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/metattune/">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </nav>
-        </div>
-      </footer>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
 
-      <script src="main.js"></script>
+  <footer class="padded center bg-dark grid-spaceAround-middle" id="contact">
+    <div class="col-12">
+      <h2> Contact </h2>
+    </div>
+    <div class="col-5_sm-12">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="mailto:info@metattunes.com"> info@metattunes.com </a>
+      <nav class="social-links">
+        <a href="https://www.linkedin.com/in/mpzielstra/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/metattune/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </nav>
+    </div>
+    <div class="col-5_sm-12">
+      <form method="post" action="index.html" class="form-style-9">
+        <input type="hidden" name="_to" value="lisettequirijns@gmail.com">
+        <ul>
+          <li>
+            <input type="text" name="field1" class="field-style field-split align-left" placeholder="Name" />
+            <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+          </li>
+          <li>
+            <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+          </li>
+          <li>
+            <textarea name="field5" class="field-style" placeholder="Message"></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Send" />
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="col-12-center copyright no-padding">
+      <ul>&copy; Metattune | Made by: <a href="http://lisettequirijns.com">Lisette Quirijns</a></ul>
+    </div>
+  </footer>
 
-  </body>
+  <script src="main.js"></script>
+
+</body>
+
 </html>
